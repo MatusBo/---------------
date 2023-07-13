@@ -13,6 +13,7 @@ footer {
 .first-column {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+
 }
 
 .second-column {
@@ -23,6 +24,7 @@ footer {
 .contact-column {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+padding-left: 40%;
 }
 
 .social-networks {
