@@ -1,0 +1,112 @@
+/*ЗАГАЛЬНІ*/
+
+.med {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.big {
+  font-size: 16px;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.norm {
+  font-weight: 400;
+}
+
+.sbold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+/*HEADER*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5vw;
+}
+
+/*FOOTER*/
+.footer {
+  display: grid;
+  grid-template-columns: 15% 25% 30% 30%;
+  grid-template-rows: 35vh 35vh 20vh;
+  background-color: #F4F4F4;
+}
+
+.footer-logo {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  text-align: center;
+  margin-top: 15vh;
+
+}
+
+.first-column {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding-left: 5vw;
+}
+
+.second-column {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+}
+
+.contact-column {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.schedule {
+  display: flex;
+  gap: 2vw;
+}
+
+.social-networks {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.social-networks__icons {
+  display: flex;
+  gap: 1.5vw;
+}
+
+.f-c {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  padding-left: 5vw;
+}
+
+.s-c {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.last-c {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 24px;
+}
