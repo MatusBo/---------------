@@ -9,7 +9,7 @@
     <title>Etnodim</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="start">
       <nav>
         <ul>
           <li><a class="big bold c-r" href="">Каталог</a></li>
@@ -79,14 +79,20 @@
     <div class="container">
       <section class="location">
         <a class="sbold" href="">Головна</a>
-        <p>-</p>
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" fill="white"/>
+          <path d="M6 12H18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         <a class="sbold" href="">Жінкам</a>
-        <p>-</p>
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" fill="white"/>
+          <path d="M6 12H18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         <p>Жіночі вишиванки</p>
       </section>
       <section class="filter">
         <div class="size">
-          <input type="checkbox" id="title" />
+          <input class="none" type="checkbox" id="title" />
           <label class="filter__article" for="title">
             <h3 class="sbold">Розмір</h3>
             <svg
@@ -98,7 +104,7 @@
             >
               <rect width="24" height="24" fill="white" />
               <path
-                d="M7 14.5L12 9.5L17 14.5"
+                d="M17 9.5L12 14.5L7 9.5"
                 stroke="#000000"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -117,32 +123,37 @@
           </article>
         </div>
         <div class="color">
-          <div class="filter__article">
+          <input class="none" type="checkbox" id="title-c" />
+          <label class="filter__article" for="title-c">
             <h3 class="sbold">Колір</h3>
             <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="24" height="24" fill="white" />
-              <path
-                d="M7 14.5L12 9.5L17 14.5"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="24" height="24" fill="white" />
+            <path
+              d="M17 9.5L12 14.5L7 9.5"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
             </svg>
-          </div>
-          <label> <input type="checkbox" />білий</label>
-          <label> <input type="checkbox" />чорний</label>
-          <label> <input type="checkbox" />бежевий</label>
-          <label> <input type="checkbox" />зелений</label>
-          <label> <input type="checkbox" />синій</label>
+          </label>
+          <article>
+            <label> <input type="checkbox" />білий</label>
+            <label> <input type="checkbox" />чорний</label>
+            <label> <input type="checkbox" />бежевий</label>
+            <label> <input type="checkbox" />зелений</label>
+            <label> <input type="checkbox" />синій</label>
+          </article>
         </div>
         <div class="season">
-          <div class="filter__article">
+          <input class="none" type="checkbox" id="title-s" />
+          <label class="filter__article" for="title-s">
             <h3 class="sbold">Сезон</h3>
             <svg
               width="24"
@@ -159,12 +170,15 @@
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </label>
+          <article>
           <label> <input type="checkbox" />весна-літо</label>
           <label> <input type="checkbox" />осінь-зима</label>
+        </article>
         </div>
         <div class="textile">
-          <div class="filter__article">
+          <input class="none" type="checkbox" id="title-t" />
+          <label class="filter__article" for="title-t">
             <h3 class="sbold">Тканина</h3>
             <svg
               width="24"
@@ -181,29 +195,36 @@
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
-          <label> <input type="checkbox" />бавовна</label>
-          <label> <input type="checkbox" />льон</label>
+          </label>
+          <article>
+            <label> <input type="checkbox" />бавовна</label>
+            <label> <input type="checkbox" />льон</label>
+          </article>
         </div>
         <div class="sleeve">
-          <h3 class="sbold">Рукав</h3>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="24" height="24" fill="white" />
-            <path
-              d="M17 9.5L12 14.5L7 9.5"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <label> <input type="checkbox" />довгий</label>
-          <label> <input type="checkbox" />короткий</label>
+          <input class="none" type="checkbox" id="title-s" />
+          <label class="filter__article" for="title-s">
+            <h3 class="sbold">Рукав</h3>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="24" height="24" fill="white" />
+              <path
+                d="M17 9.5L12 14.5L7 9.5"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </label>
+          <article>
+            <label> <input type="checkbox" />довгий</label>
+            <label> <input type="checkbox" />короткий</label>
+          </article>
         </div>
       </section>
 
@@ -409,12 +430,17 @@
             <a href="">2</a>
             <a href="">3</a>
             <a href="">...</a>
+            <a href="">6</a>
             <a href="">Наступна</a>
           </div>
         </div>
       </section>
     </div>
     <footer class="footer">
+      <a class="arrow-up" href="#start"><svg width="32" height="58" viewBox="0 0 32 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.5 57.5V1M16.5 1L31 15.5M16.5 1L1 15.5" stroke="#DA1F39"/>
+        </svg></a>
+      
       <a class="footer-logo" href=""
         ><svg
           width="184"
